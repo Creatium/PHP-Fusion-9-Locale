@@ -1,13 +1,5 @@
-/themes/Main
-/locale/Untranslated
-/images/logo
-.idea/.name
+.idea
 *.xml
-/infusions/service
-/infusions/documentation
 *.iml
-config.php
-config-copy.php
 *.db
-.htaccess
-Danish/infusions/Hjemmegruppe - Genvej.lnk
+.DS_Store

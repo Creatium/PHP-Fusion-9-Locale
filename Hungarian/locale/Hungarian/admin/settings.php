@@ -2,16 +2,19 @@
 $locale['400'] = "Beállítások";
 // Site Settings
 $locale['401'] = "Alapbeállítások";
+$locale['401a'] = "Webhely beállításai";
+$locale['401b'] = "A webhely URL-je, a webhely portja és a webhely-protokollok konfigurációja.";
+
 $locale['402'] = "Oldal neve";
 $locale['403'] = "Oldal URL";
 $locale['404'] = "Oldal banner";
 $locale['404left'] = "Bal";
 $locale['404center'] = "Közép";
 $locale['404right'] = "Jobb";
-$locale['404XS'] = "Logó Pozíció XS";
-$locale['404SM'] = "Logó Pozíció SM";
-$locale['404MD'] = "Logó Pozíció MD";
-$locale['404LG'] = "Logó Pozíció LG";
+$locale['404XS'] = "Logó Pozíció XS (Mobil)";
+$locale['404SM'] = "Logó Pozíció SM (Tablet)";
+$locale['404MD'] = "Logó Pozíció MD (Laptop)";
+$locale['404LG'] = "Logó Pozíció LG (PC)";
 $locale['405'] = "Oldal e-mail címe";
 $locale['406'] = "Neved vagy beceneved";
 $locale['407'] = "Üdvözlő üzenet:";
@@ -58,6 +61,10 @@ $locale['443a'] = "1 Felhasználói Panel Elrejtése";
 $locale['443b'] = "2 Felhasználói Panel Elrejtése";
 $locale['443c'] = "3 Felhasználói Panel Elrejtése";
 $locale['443d'] = "4 Felhasználói Panel Elrejtése";
+$locale['444'] = "Domain szerverek";
+$locale['444a'] = "Egyetlen webhely több tartományának konfigurálása.<br />Adja meg soronként a tartományokat.";
+$locale['444b'] = "Regisztrált Domain Nevek";
+$locale['445'] = "Érvénytelen (Teszt Célra)";
 
 // Time & Date Settings
 $locale['450'] = "Dátum és idő";
@@ -96,6 +103,7 @@ $locale['605'] = "Max fájlméret (byte):";
 $locale['606'] = "Miniatűr készítési eljárás";
 $locale['607'] = "GD1";
 $locale['608'] = "GD2";
+$locale['609'] = "Fejlesztési mód";
 
 $locale['649'] = "Tiltott Felhasználó Nevek:";
 $locale['650'] = "További beállítások";
@@ -192,6 +200,9 @@ $locale['708'] = "Alapértelmezett beállítások";
 $locale['709'] = "E-mail értesítés új üzenetről?";
 $locale['710'] = "Elküldött üzenetek mentése?";
 $locale['711'] = "Megjegyzés: Amennyiben a felhasználó nem állít be mást, ez lesz az érvényes.";
+$locale['712'] = "Összes Üzenet Törölve.";
+$locale['713'] = "Biztos törlöd az összes üzenetet?";
+$locale['714'] = "Összes Üzenet Törlése";
 
 // Save Settings
 $locale['750'] = "Beállítások mentése";
@@ -234,8 +245,10 @@ $locale['1012'] = "Anonimizálás";
 $locale['1013'] = "Végleges törlés";
 $locale['1014'] = "A felhasználók bejelentkezhetnek egyszerre több gépről?";
 $locale['1014a'] = "A biztonság növeléséhez kapcsold ki.";
+$locale['1015'] = "Szélesség";
+$locale['1016'] = "Magasság";
 
-$locale['1020'] = array(1 => 'Bájt (bájt)', 1000 => 'KB (Kilobájt)', 1000000 => 'MB (Megabájt)');
+$locale['1020'] = [1 => 'Bájt (bájt)', 1024 => 'KB (Kilobájt)', 1048576 => 'MB (Megabájt)'];
 
 // Social integration
 $locale['1030'] = "Készíts Open Graph metacímkéket a közösségi oldalakhoz.";
@@ -295,3 +308,15 @@ $locale['user_settings'] = "Felhasználói Beállítások";
 $locale['theme_settings'] = "Felület Beállítások";
 
 $locale['securimage3'] = "Secure Image v.3";
+
+// Security Settings
+$locale['security_001'] = "Rendszer Sessions";
+$locale['security_002'] = "Honlap Session Beállítások";
+$locale['security_003'] = "Session Típusa";
+$locale['security_004'] = "Adatbázis Rendszer";
+$locale['security_005'] = "Fájl Rendszer";
+$locale['security_006'] = "Rendszer Cache Törlése";
+$locale['security_007'] = "Az összes rendszeres munkamenet sikeresen törölve lett";
+$locale['security_008'] = "Űrlap Token";
+$locale['security_009'] = "Űrlap Tokenek Száma";
+$locale['security_010'] = "Fusion Regisztráció Védelem";

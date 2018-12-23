@@ -6,7 +6,9 @@
  * @locale region       ISO-3166 (2 Alpha numeric) - https://www.iso.org/obp/ui/#search
  * @locale select2      refer to path includes/dynamics/select2/select2_locale_{value}.js
  * @locale tinymce      refer to path includes/jscripts/tinymce/langs/{value}.js
- * @package locale/Dutch
+ * @locale phpmailer         refer to path includes/classes/PHPMailer/language/phpmailer.lang-{value}.php
+ * @locale password_strength refer to path includes/dynamics/password/lang/{value}.js
+* @package locale/Dutch
  
  * Vertaald door Douwe Yntema
  * Nederlandstalige support site: http://www.phpfusion-nederlands.info 
@@ -17,9 +19,14 @@ setlocale(LC_TIME, "nl_NL"); // Voor Linux Server
 $locale['charset'] = "ISO-8859-1";
 $locale['region'] = "NL";
 $locale['xml_lang'] = "nl";
+$locale['short_lang_name'] = "nl";
 $locale['tinymce'] = "nl";
+$locale['select2'] =  "nl";
 $locale['phpmailer'] = "nl";
 $locale['datepicker'] = "nl-nl";
+$locale['datepicker_js'] = "DD-M-YYYY H:mm:ss";
+$locale['datepicker_php'] = "d-m-Y H:i:s";
+$locale['password_strength'] = "nl";
 // Full & Short Months
 $locale['months'] = "&nbsp|Januari|Februari|Maart|April|Mei|Juni|Juli|Augustus|September|Oktober|November|December";
 $locale['shortmonths'] = "&nbsp|Jan|Feb|Maa|Apr|Mei|Jun|Jul|Aug|Sept|Okt|Nov|Dec";
@@ -49,6 +56,7 @@ $locale['sel_state'] = "Selecteer Provincie";
 $locale['sel_user'] = "Geef a.u.b. een gebruikersnaam op";
 $locale['add_language'] = "Voeg vertaling toe";
 $locale['add_lang'] = "Toevoegen %s";
+$locale['other_states'] = "Andere provincie";
 // Name
 $locale['name'] = 'Volledige Naam';
 $locale['username_pretext'] = 'Jou openbare gebruikersnaam is dezelfde als jou gebruikersprofiel op: %s %s';
@@ -86,6 +94,7 @@ $locale['userf1'] = "Moderator";
 // Navigation
 $locale['global_001'] = "Navigatie";
 $locale['global_002'] = "Geen links aangemaakt\n";
+$locale['global_003'] = "Niets om voorvertoning van te geven";
 // Users Online
 $locale['global_010'] = "Gebruikers Online";
 $locale['global_011'] = "Gasten online";
@@ -94,6 +103,7 @@ $locale['global_013'] = "Geen leden online";
 $locale['global_014'] = "Totaal aantal leden";
 $locale['global_015'] = "Niet-geactiveerde leden";
 $locale['global_016'] = "Nieuwste lid";
+$locale['global_017'] = "Navigatie aan/uit";
 // Forum Side panel
 $locale['global_020'] = "Forum Onderwerpen";
 $locale['global_021'] = "Nieuwste onderwerpen";
@@ -183,9 +193,10 @@ $locale['global_105'] = "Nog geen lid? [LINK]Klik hier[/LINK] om aan te melden."
 $locale['global_106'] = "[LINK]Wachtwoord kwijt?[/LINK]";
 $locale['global_107'] = "Aanmelden";
 $locale['global_108'] = "Wachtwoord kwijt";
+$locale['global_109'] = "Aanmelden";
 // Member User Menu
 $locale['global_120'] = "Profiel Wijzigen";
-$locale['global_121'] = "Privé Berichten";
+$locale['global_121'] = "Priv&eacute; Berichten";
 $locale['global_122'] = "Ledenlijst";
 $locale['global_123'] = "Beheerder Paneel";
 $locale['global_124'] = "Uitloggen";
@@ -204,8 +215,9 @@ $locale['UM063'] = "Onthouden Me";
 $locale['UM064'] = "Inloggen";
 $locale['UM065'] = "Nog geen lid? [LINK]Klik hier[/LINK] om aan te melden.";
 $locale['UM066'] = "Wachtwoord vergeten?\n[LINK]Vraag een nieuwe[/LINK].";
+$locale['UM067'] = "(niet aanbevolen voor publieke of gedeelde computer)";
 $locale['UM080'] = "Profiel aanpassen";
-$locale['UM081'] = "Privé Berichten";
+$locale['UM081'] = "Priv&eacute; Berichten";
 $locale['UM082'] = "Leden lijst";
 $locale['UM083'] = "Beheerder Paneel";
 $locale['UM084'] = "Uitloggen";
@@ -221,6 +233,7 @@ $locale['UM092'] = "Inzenden Artikel";
 $locale['UM093'] = "Inzenden Foto";
 $locale['UM094'] = "Inzenden Download";
 $locale['UM095'] = "Inzenden Blog";
+$locale['UM102'] = "Inzenden FAQ";
 // User Panel
 $locale['UM096'] = "Welkom: ";
 $locale['UM097'] = "Persoonlijk menu";
@@ -241,6 +254,7 @@ $locale['global_172'] = "Verwerkingstijd: %s seconden";
 $locale['global_173'] = "Queries";
 $locale['global_174'] = "Geheugen gebruik";
 $locale['global_175'] = "Gemiddeld: %s seconden";
+$locale['global_176'] = "privacybeleid";
 // Admin Navigation
 $locale['global_180'] = "Beheerder Index";
 $locale['global_181'] = "Terug naar de Site";
@@ -255,7 +269,6 @@ $locale['global_195'] = "Dit account is nog niet geactiveerd.";
 $locale['global_196'] = "Ongeldige gebruikersnaam of wachtwoord.";
 
 $locale['global_197'] = "Wacht u a.u.b. terwijl we u doorsturen...\n\n[ [LINK]Of klik hier als je niet wenst te wachten[/LINK] ]";
-
 $locale['global_198'] = "<strong>Waarschuwing:</strong> setup.php aangetroffen, a.u.b. onmiddellijk verwijderen.";
 $locale['global_199'] = "<strong>Waarschuwing:</strong> beheerderwachtwoord niet ingesteld, klik [LINK]Profiel wijzigen[/LINK] m dit in te stellen.";
 //Titles
@@ -338,13 +351,18 @@ $locale['global_465'] = "TB";
 $locale['global_500'] = "U wordt doorgestuurd naar %s, wacht een moment. Als u niet wordt doorgestuurd, klikt u hier.";
 // Captcha Locales
 $locale['global_600'] = "Validatie Code";
-$locale['recaptcha'] = "en";
+$locale['global_601'] = "U dient een correcte validatie code in te invoeren";
+$locale['recaptcha'] = "nl";
+// Site links
+$locale['global_700'] = "Toon meer";
 //Miscellaneous
 $locale['global_900'] = "Niet in staat om HEX naar DEC te converteren";
+$locale['global_901'] = "Voeg Media in";
 //Language Selection
 $locale['global_ML100'] = "Taal:";
 $locale['global_ML101'] = "- Selecteer Taal -";
 $locale['global_ML102'] = "Site taal";
+$locale['global_ML103'] = "Verander taal";
 // Flood Control
 $locale['flood'] = "Je moet wachten tot de afkoelingsperiode voorbij is voordat je weer kunt posten. Wacht a.u.b. nog %s.";
 $locale['no_image'] = "Geen Afbeelding";
@@ -358,8 +376,8 @@ $locale['home'] = 'Index';
 // Status
 $locale['error'] = 'Fout!';
 $locale['success'] = 'Succes!';
-$locale['enable'] = 'Vrijgave';
-$locale['disable'] = 'Blokkeer';
+$locale['enable'] = 'Inschakelen';
+$locale['disable'] = 'Uitschakelen';
 $locale['can'] = 'kan';
 $locale['cannot'] = 'kan niet';
 $locale['no'] = 'Nee';
@@ -376,10 +394,12 @@ $locale['joined'] = "Lid sinds: ";
 // Navigation
 $locale['next'] = 'Volgende';
 $locale['previous'] = 'Vorige';
-$locale['back'] = 'Tergu';
+$locale['back'] = 'Terug';
 $locale['forward'] = 'Vooruit';
 $locale['go'] = 'Ga';
 $locale['cancel'] = 'Afbreken';
+$locale['clear'] = "Wissen";
+$locale['move'] = "Verplaats";
 $locale['move_up'] = "Omhoog";
 $locale['move_down'] = "Omlaag";
 $locale['load_more'] = "Laad meer";
@@ -424,15 +444,15 @@ $locale['image'] = 'Afbeelding';
 // Forms
 $locale['choose'] = 'Kies a.u.b. Een...';
 $locale['no_opts'] = 'Geen selectie';
-$locale['root'] = 'Als Hoofdmap';
+$locale['root'] = 'Als voorgaande';
 $locale['choose-user'] = 'Kies a.u.b. een Lid...';
 $locale['choose-location'] = 'Kies a.u.b. een Locatie';
-$locale['parent'] = 'Aanmaaken als nieuwe Hoofdmap..';
+$locale['parent'] = 'Aanmaken als nieuwe Hoofdmap..';
 $locale['order'] = 'Sortering';
 $locale['status'] = 'Status';
 $locale['note'] = 'Maak een notitie van dit item';
 $locale['publish'] = 'Gepubliceerd';
-$locale['unpublish'] = 'Onepubliceerd';
+$locale['unpublish'] = 'Ongepubliceerd';
 $locale['draft'] = 'Klad';
 $locale['settings'] = 'Instellingen';
 $locale['posted'] = 'geplaatst';
@@ -443,13 +463,15 @@ $locale['view'] = 'Bekijk';
 $locale['login'] = 'Aanmelden';
 $locale['logout'] = 'Afmelden';
 $locale['admin-logout'] = 'Beheerder Afmelden';
-$locale['message'] = 'Privé Berichten';
+$locale['message'] = 'Priv&eacute; Berichten';
 $locale['logged'] = 'Aangemeld als ';
 $locale['version'] = 'Versie ';
 $locale['browse'] = 'Bladeren ...';
 $locale['close'] = 'Sluiten';
 $locale['nopreview'] = 'Er is niets om te laten zien';
 $locale['mark_as'] = "Markeren Als";
+$locale['custom'] = "Eigen";
+$locale['submit'] = "Inzenden";
 // Alignment
 $locale['left'] = "Links";
 $locale['center'] = "Midden";
@@ -485,7 +507,7 @@ $locale['fmt_news'] = "nieuws|nieuws";
 $locale['fmt_photo'] = "foto|fotos";
 $locale['fmt_post'] = "post|posts";
 $locale['fmt_question'] = "vraag|vragen";
-$locale['fmt_read'] = "lezen|gelezen";
+$locale['fmt_read'] = "gelezen|gelezen";
 $locale['fmt_second'] = "seconde|seconden";
 $locale['fmt_shouts'] = "shout|shouts";
 $locale['fmt_thread'] = "onderwerp|onderwerpen";
@@ -494,5 +516,7 @@ $locale['fmt_views'] = "bekijken|bekeken";
 $locale['fmt_weblink'] = "weblink|weblinks";
 $locale['fmt_week'] = "week|weken";
 $locale['fmt_year'] = "jaar|jaren";
+$locale['fmt_points'] = "punt|punten";
+$locale['fmt_admin'] = "beheerder|beheerders";
 // include Defender locales
 include __DIR__."/defender.php";

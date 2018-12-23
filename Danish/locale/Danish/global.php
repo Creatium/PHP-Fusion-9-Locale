@@ -29,15 +29,19 @@ $locale['datepicker'] = "da";
 $locale['datepicker_js'] = "DD-M-YYYY, H:mm:ss";
 $locale['datepicker_php'] = "d-m-Y, H:i:s";
 $locale['password_strength'] = "da";
+$locale['date_day'] = "%b %d";
+$locale['text-direction'] = "ltr";
 // Full & Short Months
-$locale['months'] = "&nbsp|Januar|Februar|Marts|April|Maj|Juni|Juli|August|September|Oktober|November|December";
-$locale['shortmonths'] = "&nbsp|Jan|Feb|Mar|Apr|Maj|Jun|Jul|Aug|Sep|Okt|Nov|Dec";
+$locale['months'] = "&nbsp;|Januar|Februar|Marts|April|Maj|Juni|Juli|August|September|Oktober|November|December";
+$locale['shortmonths'] = "&nbsp;|Jan|Feb|Mar|Apr|Maj|Jun|Jul|Aug|Sep|Okt|Nov|Dec";
 $locale['weekdays'] = "Søndag|Mandag|Tirsdag|Onsdag|Torsdag|Fredag|Lørdag";
 // Timers
 $locale['year'] = "år";
 $locale['year_a'] = "år";
 $locale['month'] = "måned";
 $locale['month_a'] = "måneder";
+$locale['week'] = "uge";
+$locale['week_a'] = "uger";
 $locale['day'] = "dag";
 $locale['day_a'] = "dage";
 $locale['hour'] = "time";
@@ -47,6 +51,7 @@ $locale['minute_a'] = "minutter";
 $locale['second'] = "sekund";
 $locale['second_a'] = "sekunder";
 $locale['just_now'] = "lige nu";
+$locale['now'] = 'nu';
 $locale['ago'] = "siden";
 // Geo
 $locale['street1'] = "Gadenavn 1";
@@ -95,7 +100,7 @@ $locale['status8'] = "Inaktiv";
 $locale['userf1'] = "Ordstyrer";
 // Navigation
 $locale['global_001'] = "Navigation";
-$locale['global_002'] = "Der er ikke oprettet links\n";
+$locale['global_002'] = "Der er ikke oprettet links<br/>";
 $locale['global_003'] = "Intet at vise";
 // Users Online
 $locale['global_010'] = "Besøgende";
@@ -216,7 +221,7 @@ $locale['UM062'] = "Kodeord";
 $locale['UM063'] = "Husk mig";
 $locale['UM064'] = "Log ind";
 $locale['UM065'] = "Er du ikke bruger endnu? <a href='".BASEDIR."register.php' class='side'>Klik her</a> for at oprette dig.";
-$locale['UM066'] = "Har du glemt dit kodeord? Bed om at få et nyt ved at klikke <a href='".BASEDIR."lostpassword.php' class='side'>her</a>.";
+$locale['UM066'] = "Har du glemt dit kodeord?<br/>[LINK]Bed om at få et nyt ved at klikke her[/LINK].";
 $locale['UM067'] = "(frarådes på en offentligt tilgængelig eller delt computer)";
 $locale['UM080'] = "Rediger profil";
 $locale['UM081'] = "Private beskeder";
@@ -269,10 +274,9 @@ $locale['global_193'] = "Logger ind som ";
 $locale['global_194'] = "Denne konto er aktuelt lukket.";
 $locale['global_195'] = "Denne konto er endnu ikke aktiveret.";
 $locale['global_196'] = "Forkert brugernavn eller kodeord.";
-$locale['global_197'] = "Vent et øjeblik, mens vi overfører dig... <br>
-[ <a href='index.php'>Eller klik her, hvis du ikke ønsker at vente</a> ]";
+$locale['global_197'] = "Vent et øjeblik, mens vi overfører dig... <br/>[ [LINK]Eller klik her, hvis du ikke ønsker at vente[/LINK] ]";
 $locale['global_198'] = "<strong>Advarsel:</strong> INSTALLATIONSPROGRAMMERNE ER IKKE SLETTET. SLET FILEN install.php MED DET SAMME!";
-$locale['global_199'] = "<strong>Advarsel:</strong> administratorkodeord er ikke oprettet. Klik på <a target='_blank' href='".BASEDIR."edit_profile.php'>Rediger profil</a> for at oprette det.";
+$locale['global_199'] = "<strong>Advarsel:</strong> administratorkodeord er ikke oprettet. Klik på [LINK]Rediger profil[/LINK] for at oprette det.";
 //Titles
 $locale['global_200'] = " - ";
 $locale['global_201'] = ": ";
@@ -282,18 +286,15 @@ $locale['global_204'] = " - Debat";
 //Themes
 $locale['global_210'] = "Spring til indhold";
 $locale['global_300'] = "Intet tema fundet";
-$locale['global_301'] = "Vi beklager meget, men siden kan ikke vises. Af ukendte årsager kan sidens tema ikke findes.
-Hvis du er administrator på siden, så brug din FTP-klient til at uploade et tema designet til brug i forbindelse med
-<strong>PHP-Fusion version 9</strong> til folderen <strong>themes/</strong>. Efter at du har gjort det, skal du se
+$locale['global_301'] = "Vi beklager meget, men siden kan ikke vises. Af ukendte årsager kan sidens tema ikke findes. Hvis du er administrator på siden, så brug din FTP-klient til at uploade et tema designet til brug i forbindelse med <strong>PHP-Fusion version 9</strong> til folderen <strong>themes/</strong>. Efter at du har gjort det, skal du se
 under <strong>Hovedopsætning</strong> for at sikre dig, at det uploadede tema er kommet korrekt op på siden.
 Bemærk at den uploadede temafolder skal have nøjagtig samme navn inklusive store og små bogstaver som navnet
-på det tema, du vælger under <strong>Hovedopsætning</strong>.<br /><br /> Hvis du er medlem på siden, så skal
-du kontakte sidens administrator via ".hide_email(fusion_get_settings('siteemail'))." mail og rapportere om problemet.";
+på det tema, du vælger under <strong>Hovedopsætning</strong>.<br/><br/> Hvis du er medlem på siden, så skal
+du kontakte sidens administrator via [SITE_EMAIL] mail og rapportere om problemet.";
 $locale['global_302'] = "Det tema, som du har valgt under hovedopsætning eksisterer ikke eller er inkompatibelt!";
 // JavaScript Not Enabled
-$locale['global_303'] = "Jamen dog! Hvor er <strong>JavaScript</strong> henne?<br />Din browser understøtter ikke
-JavaScript eller har ikke understøttelsen slået til. Slå <strong>JavaScript til</strong> i din browser for at se denne side
-ordentligt,<br /> eller <strong>opgrader</strong> til en browser, der understøtter JavaScript.";
+$locale['global_303'] = "Jamen dog! Hvor er <strong>JavaScript</strong> henne?<br/>Din browser understøtter ikke JavaScript eller har ikke understøttelsen slået til. Slå <strong>JavaScript til</strong> i din browser for at se denne side
+ordentligt,<br/> eller <strong>opgrader</strong> til en browser, der understøtter JavaScript.";
 // User Management
 $locale['global_400'] = "suspenderet";
 $locale['global_401'] = "udelukket";
@@ -311,28 +312,27 @@ $locale['global_412'] = "Denne konto er blevet anonymiseret sandsynligvis på gr
 // Flood control
 $locale['global_440'] = "Automatisk udelukkelse via Flood Control";
 $locale['global_441'] = "Din brugerkonto på ".fusion_get_settings('sitename')."er blevet udelukket";
-$locale['global_442'] = "Hej [USER_NAME],\n
-Din konto på ".fusion_get_settings('sitename')." har offentliggjort for meget indhold på meget kort tid fra IP-adressen ".USER_IP.", og er derfor blevet udelukket. Udelukkelsen er gennemført for at forhindre automatfunktioner i at offentliggøre spam meget hurtigt.\n
-Kontakt administratoren på ".fusion_get_settings('siteemail')." for at få genaktiveret din konto eller for at godtgøre, at det ikke var dig, som udløste denne sikkerhedsudelukkelse.\n
-".fusion_get_settings('siteusername');
+$locale['global_442'] = "Hej [USER_NAME],<br/>
+Din konto på [SITENAME] har offentliggjort for meget indhold på meget kort tid fra IP-adressen [USER_IP], og er derfor blevet udelukket. Udelukkelsen er gennemført for at forhindre automatfunktioner i at offentliggøre spam meget hurtigt.<br/>
+Kontakt administratoren på [SITE_EMAIL] for at få genaktiveret din konto eller for at godtgøre, at det ikke var dig, som udløste denne sikkerhedsudelukkelse.<br/>[SITEUSERNAME]";
 // Lifting of suspension
 $locale['global_450'] = "Udelukkelsen er automatisk ophævet af systemet";
 $locale['global_451'] = "Suspendering er ophævet på [SITENAME]";
-$locale['global_452'] = "Hej USER_NAME,\n
-Suspenderingen af din konto på [SITEURL] er blevet ophævet. Herunder følger dine pålogningsdata:\n
-Brugernavn: USER_NAME\nKodeord: Skjult af sikkerhedsmæssige årsager\n
-Hvis du har glemt dit kodeord kan du klikke på dette link for at få et nyt: LOST_PASSWORD\n\n
-Venlig hilsen.\n[SITEUSERNAME]";
-$locale['global_453'] = "Hej USER_NAME,\nSuspenderingen af din konto på [SITEURL] er blevet ophævet.\n\n
-Venlig hilsen.\n[SITEUSERNAME]";
+$locale['global_452'] = "Hej USER_NAME,<br/>
+Suspenderingen af din konto på [SITEURL] er blevet ophævet. Herunder følger dine pålogningsdata:<br/>
+Brugernavn: USER_NAME<br/>Kodeord: Skjult af sikkerhedsmæssige årsager<br/>
+Hvis du har glemt dit kodeord kan du klikke på dette link for at få et nyt: LOST_PASSWORD<br/>
+Venlig hilsen.<br/>[SITEUSERNAME]";
+$locale['global_453'] = "Hej USER_NAME,<br/>Suspenderingen af din konto på [SITEURL] er blevet ophævet.<br/>
+Venlig hilsen.<br/>[SITEUSERNAME]";
 $locale['global_454'] = "Din konto er blevet genaktiveret på [SITENAME]";
-$locale['global_455'] = "Hej USER_NAME,\n
-Sidste gang, hvor du loggede på [SITEURL] blev din konto genaktiveret, og du er nu ikke længere registreret som inaktiv.\n\n
-Venlig hilsen.\n[SITEUSERNAME]";
+$locale['global_455'] = "Hej USER_NAME,<br/>
+Sidste gang, hvor du loggede på [SITEURL] blev din konto genaktiveret, og du er nu ikke længere registreret som inaktiv.<br/>
+Venlig hilsen.<br/>[SITEUSERNAME]";
 $locale['global_456'] = "Orientering om nyt kodeord på [SITENAME]";
 $locale['global_457'] = "Hej USER_NAME,
-\n\nDer er blevet lavet et nyt kodeord for din konto på [SITENAME]. Herunder kan du se dine nye data:\n\n
-Brugernavn: USER_NAME\nKodeord: [PASSWORD]\n\nVenlig hilsen.\n[SITEUSERNAME]";
+<br/>Der er blevet lavet et nyt kodeord for din konto på [SITENAME]. Herunder kan du se dine nye data:<br/>
+Brugernavn: USER_NAME<br/>Kodeord: [PASSWORD]<br/>Venlig hilsen.<br/>[SITEUSERNAME]";
 $locale['global_458'] = "Der er oprettet et nyt kodeord for USER_NAME";
 $locale['global_459'] = "Der er oprettet et nyt kodeord for USER_NAME, og der blev ikke sendt en mail. Husk at underrette brugeren om ændringen.";
 
@@ -420,6 +420,7 @@ $locale['promote'] = "Forfrem";
 $locale['show'] = "Vis";
 $locale['actions'] = "Handlinger";
 $locale['language'] = "Sprog";
+$locale['loading'] = "Henter...";
 // Persons & Identifiers
 $locale['you'] = "Dig";
 $locale['me'] = "Mig";
@@ -447,8 +448,8 @@ $locale['parent'] = "Opret som ny overordnet sektion...";
 $locale['item_order'] = "Rækkefølge";
 $locale['status'] = "Status";
 $locale['note'] = "Skriv en note om dette";
-$locale['publish'] = "Offentliggør";
-$locale['unpublish'] = "Ikke-offentliggør";
+$locale['publish'] = "Aktiver/Aktiveret";
+$locale['unpublish'] = "Deaktiver/Deaktiveret";
 $locale['sticky'] = "Fastholdt";
 $locale['unsticky'] = "Ikke fastholdt";
 $locale['draft'] = "Udkast";
@@ -519,5 +520,6 @@ $locale['fmt_points'] = "point|points";
 $locale['fmt_admin'] = "admin|admins";
 $locale['fmt_group'] = "gruppe|grupper";
 $locale['fmt_category'] = "kategori|kategorier";
+$locale['fmt_review'] = "anmeldelse|anmeldelser";
 // include Defender locales
 include __DIR__."/defender.php";

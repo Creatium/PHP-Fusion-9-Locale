@@ -14,7 +14,7 @@ setlocale(LC_TIME, "hu_HU", "hu_HU.UTF8", "hu.UTF8", "hun_hun", "Hungarian", "hu
 $locale['charset'] = "UTF-8";
 $locale['region'] = "HU";
 $locale['xml_lang'] = "hu";
-$locael['short_lang_name'] = "hu";
+$locale['short_lang_name'] = "hu";
 $locale['tinymce'] = "hu";
 $locale['select2'] = "hu";
 $locale['phpmailer'] = "hu";
@@ -22,15 +22,19 @@ $locale['datepicker'] = "hu";
 $locale['datepicker_js'] = "YYYY-M-DD H:mm:ss";
 $locale['datepicker_php'] = "Y-m-d H:i:s";
 $locale['password_strength'] = "hu";
+$locale['date_day'] = "%b %d";
+$locale['text-direction'] = "ltr";
 // Full & Short Months
-$locale['months'] = "&nbsp|január|február|március|április|május|június|július|augusztus|szeptember|október|november|december";
-$locale['shortmonths'] = "&nbsp|jan|febr|márc|ápr|máj|jún|júl|aug|szept|okt|nov|dec";
+$locale['months'] = "&nbsp;|január|február|március|április|május|június|július|augusztus|szeptember|október|november|december";
+$locale['shortmonths'] = "&nbsp;|jan|febr|márc|ápr|máj|jún|júl|aug|szept|okt|nov|dec";
 $locale['weekdays'] = "Vasárnap|Hétfő|Kedd|Szerda|Csütörtök|Péntek|Szombat";
 // Timers
 $locale['year'] = "év";
 $locale['year_a'] = "év";
 $locale['month'] = "hónap";
 $locale['month_a'] = "hónap";
+$locale['week'] = "hét";
+$locale['week_a'] = "hét";
 $locale['day'] = "nap";
 $locale['day_a'] = "nap";
 $locale['hour'] = "óra";
@@ -40,6 +44,7 @@ $locale['minute_a'] = "perc";
 $locale['second'] = "másodperc";
 $locale['second_a'] = "másodperc";
 $locale['just_now'] = "épp most";
+$locale['now'] = "most";
 $locale['ago'] = "";
 // Geo
 $locale['street1'] = "Lakcím 1";
@@ -104,7 +109,7 @@ $locale['global_020'] = "Fórumtémák";
 $locale['global_021'] = "Legújabb témák";
 $locale['global_022'] = "Legnépszerűbb témák";
 $locale['global_023'] = "Nincs elérhető fórumtéma";
-$locale['global_024'] = "Társalgások, melyekben részt vettél";
+$locale['global_024'] = "Hozzászólásaid";
 $locale['global_027'] = "Megválaszolatlan témák";
 $locale['global_028'] = "Megoldatlan kérdések";
 // Comments Side panel
@@ -128,7 +133,7 @@ $locale['global_045'] = "Megnyitva";
 $locale['global_046'] = "Válaszok";
 $locale['global_047'] = "Utolsó üzenet";
 $locale['global_048'] = "Fórum";
-$locale['global_049'] = "Dátum";
+$locale['global_049'] = "Beküldve";
 $locale['global_050'] = "Szerző";
 $locale['global_051'] = "Szavazás";
 $locale['global_052'] = "Áthelyezve";
@@ -141,7 +146,7 @@ $locale['global_058'] = "Eltávolítás";
 $locale['global_059'] = "Jelenleg egy témát sem követsz nyomon.";
 $locale['global_060'] = "Megszünteted a téma követését?";
 // Blog, News & Articles
-$locale['global_070'] = " ";
+$locale['global_070'] = "Beküldte ";
 $locale['global_070b'] = "%s összes hozzászólásának megtekintése";
 $locale['global_071'] = " - ";
 $locale['global_071b'] = "Szerző";
@@ -351,7 +356,7 @@ $locale['global_ML103'] = "Nyelv váltás";
 // Flood Control
 $locale['flood'] = "Nem szólhatsz hozzá, míg a flood periódusod le nem telt. Kérjük várj ennyit: %s.";
 $locale['no_image'] = "Nincs kép";
-$locale['send_message'] = "PM Küldés";
+$locale['send_message'] = "Üzenet Küldése";
 $locale['go_profile'] = "%s Profiljának megtekintése";
 // Global one word locales
 $locale['hello'] = "Helló!";
@@ -409,6 +414,7 @@ $locale['promote'] = "Támogat";
 $locale['show'] = "Mutat";
 $locale['actions'] = "Művelet";
 $locale['language'] = "Nyelv";
+$locale['loading'] = "Betöltés...";
 // Persons & Identifiers
 $locale['you'] = "Te";
 $locale['me'] = "Én";
@@ -461,9 +467,9 @@ $locale['preview'] = "Előnézet";
 $locale['custom'] = "Mód";
 $locale['submit'] = "Beküldés";
 // Alignment
-$locale['left'] = "Balra";
-$locale['center'] = "Középre";
-$locale['right'] = "Jobbra";
+$locale['left'] = "Ball";
+$locale['center'] = "Közép";
+$locale['right'] = "Jobb";
 // Comments and ratings
 $locale['comments'] = "Hozzászólás";
 $locale['ratings'] = "Értékelés";
@@ -508,5 +514,6 @@ $locale['fmt_points'] = "pont|pontok";
 $locale['fmt_admin'] = "admin|adminok";
 $locale['fmt_group'] = "csoport|csoportok";
 $locale['fmt_category'] = "kategória|kategóriák";
+$locale['fmt_review'] = "értékelés|értékelés";
 // include Defender locales
 include __DIR__."/defender.php";

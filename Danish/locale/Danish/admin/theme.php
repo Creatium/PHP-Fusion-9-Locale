@@ -20,7 +20,7 @@ $locale['theme_1001'] = "Opret ny";
 $locale['theme_1002'] = "Temaopsætning";
 $locale['theme_1003'] = "Indlæst";
 $locale['theme_1004'] = "Indlæs";
-$locale['theme_1005'] = "Sæt tema op";
+$locale['theme_1005'] = "Rediger tema";
 $locale['theme_1006'] = "Aktuelt aktivt tema";
 $locale['theme_1007'] = "Upload en temafil i ZIP-format ";
 $locale['theme_1008'] = "Upload tema";
@@ -132,7 +132,6 @@ $locale['theme_4013'] = "Linkfarve";
 $locale['theme_4014'] = "Teksttype";
 $locale['theme_4015'] = "Stil for horisontal tekst";
 $locale['theme_4016'] = "Linkudseende";
-$locale['theme_4016'] = "Horisontal tekst - udseende";
 
 $locale['theme_5000'] = "Normal";
 $locale['theme_5001'] = "Fed";

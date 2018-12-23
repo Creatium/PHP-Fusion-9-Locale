@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /*-------------------------------------------------------+
 | PHP-Fusion Content Management System
 | Copyright (C) PHP-Fusion Inc
@@ -18,6 +18,8 @@
 $locale['400'] = "Indstillinger";
 // Site Settings
 $locale['401'] = "Hovedindstillinger";
+$locale['401a'] = "Hjemmeside vært indstillinger";
+$locale['401b'] = "Konfiguration til din hjemmeside url, hjemmeside port og hjemmeside protokoller.";
 $locale['402'] = "Sidens navn";
 $locale['403'] = "Sidens adresse";
 $locale['404'] = "Sidens banner";
@@ -49,10 +51,10 @@ $locale['420'] = "Udeluk visning af elementer i venstre side";
 $locale['421'] = "Udeluk visning af elementer i toppen";
 $locale['422'] = "Udeluk visning af elementer i bunden";
 $locale['423'] = "Udeluk visning af elementer i højre side";
-$locale['424'] = "<strong>Eksempler:</strong><br />/news.php<br />/forum/index.php";
+$locale['424'] = "<strong>Eksempler:</strong><br/>/news.php<br/>/forum/index.php";
 $locale['425'] = "Hjemmesideadresse";
 $locale['426'] = "Protokol";
-$locale['427'] = "Hjemmesidevært";
+$locale['427'] = "Hjemmesidens vært";
 $locale['428'] = "Eksempel";
 $locale['429'] = "Hjemmesidens sti";
 $locale['430'] = "Hjemmesidens port";
@@ -74,6 +76,10 @@ $locale['443a'] = "Udeluk elementer for bruger 1 ";
 $locale['443b'] = "Udeluk elementer for bruger 2 ";
 $locale['443c'] = "Udeluk elementer for bruger 3 ";
 $locale['443d'] = "Udeluk elementer for bruger 4 ";
+$locale['444'] = "Domæne servere";
+$locale['444a'] = "Konfiguration af flere domæner på et enkelt site.<br/><br/>Adskil og tilføj et domæne i hver sin række.";
+$locale['444b'] = "Registrerede domænenavne";
+$locale['445'] = "Ugyldig (test formål)";
 
 // Time & Date Settings
 $locale['450'] = "Dato og klokkeslæt";
@@ -112,6 +118,7 @@ $locale['605'] = "Maksimal filstørrelse (i bytes)";
 $locale['606'] = "Kompressionsmetode";
 $locale['607'] = "GD1";
 $locale['608'] = "GD2";
+$locale['609'] = "Udviklingsmode";
 
 $locale['649'] = "Forbudte brugernavne";
 $locale['650'] = "Diverse";
@@ -153,7 +160,7 @@ $locale['681ML'] = "Elementer";
 $locale['682ML'] = "Sprogindstillinger";
 $locale['683ML'] = "Slå flersprogsfunktionen til";
 $locale['684ML'] = "Tilgængelige sprog";
-$locale['685ML'] = "Vælg de tilladte sprog. <br /><b>Bemærk</b>: Fjerner du et sprog, fjerner du også alle tilpassede interne links, kategorier og andet flersproget indhold i det pågældende sprog fra siden.";
+$locale['685ML'] = "Vælg de tilladte sprog. <br/><b>Bemærk</b>: Fjerner du et sprog, fjerner du også alle tilpassede interne links, kategorier og andet flersproget indhold i det pågældende sprog fra siden.";
 $locale['669'] = "Nyheder";
 $locale['669b'] = "Blogindlæg pr. side";
 $locale['669c'] = "Antal nyheder pr. side";
@@ -190,7 +197,6 @@ $locale['913'] = "Kommentarer pr. side";
 $locale['955'] = "Original";
 $locale['956'] = "Kvadrat";
 
-// Removed Recaptcha
 $locale['698'] = "SMTP godkendelse";
 $locale['699'] = "Log ind metode";
 $locale['699b'] = "Begge";
@@ -208,6 +214,9 @@ $locale['708'] = "Standardværdier for brugervalg";
 $locale['709'] = "Mail ved ny besked";
 $locale['710'] = "Skal afsendte beskeder gemmes";
 $locale['711'] = "Bemærk: Hvis den enkelte bruger vælger noget andet, er det brugervalget som slår igennem. Hvis brugeren ikke vælger selv, er det disse værdier, som slår igennem.";
+$locale['712'] = "Beskeder er blevet slettet.";
+$locale['713'] = "Er du sikker på at du vil slette alle private beskeder?";
+$locale['714'] = "Slet beskeder";
 
 // Save Settings
 $locale['750'] = "Gem opsætning";
@@ -250,8 +259,10 @@ $locale['1012'] = "Anonymiser bruger(e)";
 $locale['1013'] = "Slet bruger(e)";
 $locale['1014'] = "Skal brugere kunne logge på fra forskellige enheder samtidig";
 $locale['1014a'] = "Slå fra for at forbedre sikkerheden.";
+$locale['1015'] = "Bredde";
+$locale['1016'] = "Højde";
 
-$locale['1020'] = array(1 => 'Bytes (bytes)', 1000 => 'KB (Kilobytes)', 1000000 => 'MB (Megabytes)');
+$locale['1020'] = [1 => 'Bytes (bytes)', 1024 => 'KB (Kilobytes)', 1048576 => 'MB (Megabytes)'];
 
 // Social integration
 $locale['1030'] = "Skal der skabes OpenGraph meta tags til de sociale netværk";
@@ -317,3 +328,15 @@ $locale['user_settings'] = "Opsætning af brugeradministration";
 $locale['theme_settings'] = "Temaopsætning";
 
 $locale['securimage3'] = "Secure Image v.3";
+
+// Security Settings
+$locale['security_001'] = "System sessioner";
+$locale['security_002'] = "Konfiguration af hjemmeside sessioner";
+$locale['security_003'] = "Sessionstype";
+$locale['security_004'] = "Databasesystem";
+$locale['security_005'] = "Filsystem";
+$locale['security_006'] = "Ryd system sessioner cache";
+$locale['security_007'] = "Alle system sessioner er nu blevet ryddet";
+$locale['security_008'] = "Formular tokens";
+$locale['security_009'] = "Antal af udstedte tokens til hver formular";
+$locale['security_010'] = "Fusion GateWay";

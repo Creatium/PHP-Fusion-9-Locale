@@ -113,17 +113,26 @@ $locale['news_0703'] = "Hír beküldésére használd az alábbi űrlapot.
 A hír csak akkor kerül ki az oldalra, ha egy Adminisztrátor engedélyezi. Oldalunk fenntartja a jogot a hír bővítésére, szerkesztésére.
 Csak az oldal tartalmához illeszkedő hírt küldj be, különben töröljük.";
 $locale['news_0704'] = "Vissza a főoldalra";
-$locale['601'] = "Miniatűr mérete:";
-$locale['602'] = "Kép mérete:";
-$locale['603'] = "Max képméret:";
-$locale['604'] = "Szélesség x Magasság";
-$locale['605'] = "Max fájlméret (bájt):";
-$locale['950'] = "Kép feltöltése";
-$locale['951'] = "Kép linkjének célja:";
-$locale['953'] = "Hír";
-$locale['954'] = "Miniatűr aránya:";
-$locale['955'] = "Eredeti";
-$locale['956'] = "Négyzet";
-$locale['957'] = "Főoldalon megjelenített kép:";
-$locale['958'] = "A részleteknél megjelenített kép:";
-$locale['959'] = "Feltöltött kép";
+// New locale requried to update
+$locale['news_0705'] = "Szélesség";
+$locale['news_0706'] = "Magasság";
+$locale['news_0707'] = "Fő beállítások";
+$locale['news_0708'] = "Hír rendszerhez Konfiguráció";
+$locale['news_0709'] = "Fotóbeállítások";
+$locale['news_0710'] = "Konfiguráció a Hír fotóihoz";
+
+$locale['news_601'] = "Miniatűr mérete:";
+$locale['news_602'] = "Kép mérete:";
+$locale['news_603'] = "Max képméret:";
+$locale['news_604'] = "Szélesség x Magasság";
+$locale['news_605'] = "Max fájlméret (bájt):";
+$locale['news_950'] = "Kép feltöltése";
+$locale['news_951'] = "Kép linkjének célja:";
+$locale['news_953'] = "Hír";
+$locale['news_954'] = "Miniatűr aránya:";
+$locale['news_955'] = "Eredeti";
+$locale['news_956'] = "Négyzet";
+$locale['news_957'] = "Főoldalon megjelenített kép:";
+$locale['news_958'] = "A részleteknél megjelenített kép:";
+$locale['news_959'] = "Feltöltött kép";
+$locale['news_submit'] = "Hír %s";

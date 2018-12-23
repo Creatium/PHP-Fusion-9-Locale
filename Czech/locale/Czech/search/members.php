@@ -1,12 +1,11 @@
 <?php
 /*-------------------------------------------------------+
 | PHP-Fusion Content Management System
-| Copyright © 2002 - 2007 Nick Jones
-| http://www.php-fusion.co.uk/
+| Copyright (C) PHP-Fusion Inc
+| https://www.php-fusion.co.uk/
 +--------------------------------------------------------+
-| Filename: LOCALE/search/members.php
-| CVS Version: 2.00
-| Author: PHP-Fusion Development Team & Robert Gaudyn (Wooya)
+| Filename: locale/Czech/search/members.php
+| Author: https://www.phpfusion.cz/ - Team
 +--------------------------------------------------------+
 | This program is released as free software under the
 | Affero GPL license. You can redistribute it and/or
@@ -16,8 +15,7 @@
 | copyright header is strictly prohibited without
 | written permission from the original author(s).
 +--------------------------------------------------------*/
-
 $locale['m400'] = "Členové";
-$locale['m401'] = "člen";
-$locale['m402'] = "členové";
-?>
+$locale['m401'] = "Člen";
+$locale['m402'] = "členů";
+$locale['m403'] = "Profily jsou viditelné pouze pro členy!";

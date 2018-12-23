@@ -108,7 +108,7 @@ $locale['blog_0561'] = "Denne kategori eksisterer i forvejen.";
 // Popup Error/Warning Messages
 $locale['blog_0450'] = "Du skal angive en overskrift";
 $locale['blog_0451'] = "Skal denne blog slettes?";
-$locale['blog_0452'] = "%s er slået fra for alle indholdstyper.\n\rDet er først muligt at bruge denne funktion, når indstillingen er slået til igen.";
+$locale['blog_0452'] = "%s er slået fra for alle indholdstyper.<br/>Det er først muligt at bruge denne funktion, når indstillingen er slået til igen.";
 $locale['blog_0456'] = "Der er ikke oprettet blogs under denne kategori.";
 $locale['blog_0457'] = "Du skal angive nøgleord";
 $locale['blog_0461'] = "Der er ikke oprettet blogkategorier.";
@@ -131,19 +131,20 @@ $locale['blog_0703'] = "Brug nedenstående formular til at foreslå et blogindl�
 administrator. [SITENAME] forbeholder sig retten til at afvise eller redigere i alle forslag. Blogindlægget
 skal være foreneligt med indholdet her på siden. Upassende forslag slettes uden videre.";
 $locale['blog_0704'] = "Vend tilbage til [SITENAME]";
-$locale['601'] = "Miniaturestørrelse ";
-$locale['602'] = "Billedstørrelse ";
-$locale['603'] = "Maksimal billedstørrelse";
-$locale['604'] = "Bredde x Højde";
-$locale['605'] = "Maksimal størrelse på filen (i bytes)";
+$locale['blog_601'] = "Miniaturestørrelse ";
+$locale['blog_602'] = "Billedstørrelse ";
+$locale['blog_603'] = "Maksimal billedstørrelse";
+$locale['blog_604'] = "Bredde x Højde";
+$locale['blog_605'] = "Maksimal størrelse på filen (i bytes)";
 // Blog & News Settings
-$locale['950'] = "Upload af billede";
-$locale['951'] = "Link til billede";
-$locale['952'] = "Kategori";
-$locale['953'] = "Nyhed";
-$locale['954'] = "Størrelsesforhold for miniature";
-$locale['955'] = "Original";
-$locale['956'] = "Kvadratisk";
-$locale['959'] = "Uploadet billede";
-$locale['960'] = "Kategoribillede";
-$locale['961'] = "Tilladte filtyper";
+$locale['blog_950'] = "Upload af billede";
+$locale['blog_951'] = "Link til billede";
+$locale['blog_952'] = "Kategori";
+$locale['blog_953'] = "Nyhed";
+$locale['blog_954'] = "Størrelsesforhold for miniature";
+$locale['blog_955'] = "Original";
+$locale['blog_956'] = "Kvadratisk";
+$locale['blog_959'] = "Uploadet billede";
+$locale['blog_960'] = "Kategoribillede";
+$locale['blog_961'] = "Tilladte filtyper";
+$locale['blog_submit'] = "%s blog";

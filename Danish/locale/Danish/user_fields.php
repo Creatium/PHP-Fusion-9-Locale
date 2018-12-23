@@ -49,6 +49,7 @@ $locale['u070'] = "Udeluk";
 $locale['u071'] = "Udeluk tidsbegrænset";
 $locale['u072'] = "Slet";
 $locale['u073'] = "Skal denne bruger slettes?";
+$locale['u074'] = "Hæv blokering";
 // Profile and register
 $locale['u100'] = "For at kunne ændre dit kodeord eller din mailadresse skal du angive dit aktuelle kodeord.";
 $locale['u101'] = "Tilmeld";
@@ -76,6 +77,7 @@ $locale['u113'] = "Brugernavn";
 $locale['u114'] = "Brugertype";
 $locale['u115'] = "Sprog";
 $locale['u116'] = "Ingen gruppemedlemmer.";
+$locale['u117'] = "Ingen brugergrupper.";
 // User name and email
 $locale['u119'] = "Brugernavn indeholder.";
 $locale['u120'] = "Brugernavnet indeholder forbudte karakterer.";
@@ -112,22 +114,21 @@ $locale['u144'] = "Nyt admin. kodeord ";
 $locale['u144a'] = "Aktuelt admin. kodeord ";
 $locale['u145'] = "Bekræft kodeord ";
 $locale['u146'] = " kan ikke være identisk med det aktuelle ";
-$locale['u147'] = "Kodeordet skal være på mellem 8 og 64 tegn. Tilladt: <i>a-z, 0-9, @!#$%&\/()=-_?+*.,:;</i> - er tilladt.";
+$locale['u147'] = "Kodeordet skal være på mellem 8 og 64 tegn.<br/>Tilladt: <i>a-z, 0-9, @!#$%&\/()=-_?+*.,:;</i> - er tilladt.";
 $locale['u148'] = "De to nye kodeord er ikke identiske.";
 $locale['u148a'] = "De to administrative kodeord er ikke identiske.";
 $locale['u149'] = "Der blev ikke angivet et nyt kodeord eller også var kodeord forkert.";
 $locale['u149a'] = "Dit administrative kodeord blev ikke angivet eller var forkert.";
-$locale['u149b'] = "Dit aktuelle kodeord blev ikke opgivet eller er forkert.
-Du kan ikke ændre dit administrative kodeord uden at angive det gældende kodeord korrekt.";
+$locale['u149b'] = "Dit aktuelle kodeord blev ikke opgivet eller er forkert.<br/>Du kan ikke ændre dit administrative kodeord uden at angive det gældende kodeord korrekt.";
 // Email actiation
 $locale['u150'] = "Din tilmelding er næsten færdig. Du vil modtage en mail med dine pålogningsoplysninger sammen med et link, som du skal bruge til at bekræfte din tilmelding.";
 $locale['u151'] = "Velkommen til [SITENAME]";
-$locale['u152'] = "Hej USER_NAME,\n\r
-Velkommen til SITENAME. Herunder følger dine brugeroplysninger:\n\r
-Brugernavn: USER_NAME\n\r
-Kodeord: USER_PASSWORD\n\r
-Vær så venlig at aktivere din konto ved at klikke på følgende link: ACTIVATION_LINK\n\n\r\r
-Venlig hilsen.\n\r
+$locale['u152'] = "Hej USER_NAME,<br/>
+Velkommen til SITENAME. Herunder følger dine brugeroplysninger:<br/>
+Brugernavn: USER_NAME<br/>
+Kodeord: USER_PASSWORD<br/>
+Vær så venlig at aktivere din konto ved at klikke på følgende link: ACTIVATION_LINK<br/>
+Venlig hilsen.<br/>
 SITEUSERNAME";
 
 $locale['u153'] = "Aktiveringsmail kunne ikke afsendes.";
@@ -140,8 +141,8 @@ $locale['u161'] = "Du kan nu logge ind på siden.";
 $locale['u162'] = "En administrator vil aktivere din konto meget snart.";
 $locale['u163'] = "Profilen blev opdateret.";
 $locale['u164'] = "Opdateringen lykkedes ikke";
+$locale['u165'] = "Mail er blevet eftersendt.";
 
-//$locale['u165'] = "Registration failed";
 $locale['u167'] = "af følgende årsag(er)";
 $locale['u168'] = "Forsøg igen.";
 $locale['u169'] = "Profilen er opdateret";
@@ -153,12 +154,10 @@ $locale['u174'] = "Tilføj endnu en bruger?";
 // Avatar upload
 $locale['u180'] = "Der opstod en fejl i forbindelse med upload af din avatar";
 
-
 $locale['u184'] = "Maks. filstørrelse: %s / Maks. størrelse: %ux%u pixels";
 $locale['u185'] = "Avatar";
 $locale['u186'] = "Klik på gennemse for at uploade et billede";
 $locale['u187'] = "Slet";
-
 // Captcha and terms
 $locale['u190'] = "Sikkerhedskode";
 $locale['u191'] = "Indskriv sikkerhedskode";
@@ -172,13 +171,13 @@ $locale['u195'] = "Der skal indskrives en sikkerhedskode.";
 $locale['u200'] = "En bekræftelsesmail er sendt til din mailadresse (%s).";
 $locale['u201'] = "Din mailadresse ændres, når du klikker på linket i mailen.";
 $locale['u202'] = "Bekræftelse af mailadresse på - [SITENAME]";
-$locale['u203'] = "Hej [USER_NAME]\n
-Du eller en anden har angivet denne mailadresse i relation til kontoen på vores side.\n
-Hvis du virkelig vil ændre din mailadresse til det angivne, så klik på følgende link:\n
-[EMAIL_VERIFY_LINK]\n
-Bemærk: Du skal være logget på for at fortsætte.\n
+$locale['u203'] = "Hej [USER_NAME]<br/>
+Du eller en anden har angivet denne mailadresse i relation til kontoen på vores side.<br/>
+Hvis du virkelig vil ændre din mailadresse til det angivne, så klik på følgende link:<br/>
+[EMAIL_VERIFY_LINK]<br/>
+Bemærk: Du skal være logget på for at fortsætte.<br/>
 Venlig hilsen
-[SITEUSERNAME]\n\r
+[SITEUSERNAME]<br/>
 [SITENAME]";
 
-$locale['u210'] = "Bruger omdømme";
+$locale['u210'] = "Brugeromdømme";
